@@ -1,0 +1,60 @@
+.gallery.box{
+    width: 220px;
+    height:232px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 10px #fff solid;
+}
+
+.gallery .card{
+    position: relative;
+}
+
+.gallery .overlay{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left:0;
+    right: 0;
+    opacity: 0;
+    background-color: #000;
+    -webkit-transition: opacity 0.35s;
+    -o-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+
+.gallery .instagram{
+    width: 42px;
+    top: 0;
+    left: 0;
+    padding: 10px 10px;
+    position: absolute;
+    color: #ffffff;
+    z-index: 1;
+}
+
+/* All hovers here! */
+
+.gallery.box:hover {
+    border: 0;
+}
+
+.gallery:hover .overlay{
+    opacity: 0.5;
+}
+
+
+.gallery:hover .instagram{
+    transform: scale(1.20, 1.20);
+}
+
+.gallery .instaphoto{
+    width: 235px;
+    height: 242px;
+}
+
+.gallery:hover .instaphoto{
+    transform: scale(1.20, 1.20);
+}
+
+

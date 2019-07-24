@@ -1,0 +1,59 @@
+
+
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit
+}
+
+.hidden, .hide {
+    display: none !important;
+    visibility: hidden !important
+}
+
+.city-picker {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.city-picker__expander:checked ~ .city-picker__label .arrow-down {
+    transform: rotate(180deg)
+}
+
+.city-picker--header .city-picker__expander:checked ~ .city-picker__body {
+    display: block
+}
+
+.city-picker--header .city-picker__body {
+    display: none
+}
+
+.city-picker--header .city-picker__body:before, .city-picker--header .city-picker__body:after {
+    position: absolute;
+    left: 3.5rem;
+    display: block;
+    content: '';
+    border: 1rem solid transparent;
+    border-top: 0
+}
+
+.city-picker--header .city-picker__body:before {
+    top: -1.1rem;
+    border-bottom-color: #aaa
+}
+
+.city-picker--header .city-picker__body:after {
+    top: -1rem;
+    border-bottom-color: #fff
+}
+
+.city-picker--drawer .city-picker__expander:checked ~ .city-picker__list-container {
+    display: block
+}
+
+.city-picker--drawer .city-picker__list-container {
+    display: none
+}
